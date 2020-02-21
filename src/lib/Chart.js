@@ -62,7 +62,7 @@ class Chart extends PureComponent {
 }
 
 Chart.propTypes = {
-	height: PropTypes.number,
+    height: PropTypes.number,
 	origin: PropTypes.oneOfType([
 		PropTypes.array,
 		PropTypes.func
@@ -100,6 +100,7 @@ Chart.defaultProps = {
 	yPan: true,
 	yPanEnabled: false,
 	onContextMenu: noop,
+    type: "chart",
 };
 
 Chart.contextTypes = {
