@@ -55,7 +55,7 @@ export function getNewChartConfig(innerDimension, children) {
 	var existingChartConfig = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
 
 	return React.Children.map(children, function (each) {
-		if (each && each.type.toString() === Chart.toString()) {
+		if (each.props.type === "chart") {
 			var chartProps = _extends({}, Chart.defaultProps, each.props);
 			var id = chartProps.id,
 			    origin = chartProps.origin,

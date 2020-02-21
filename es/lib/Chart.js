@@ -138,7 +138,8 @@ Chart.defaultProps = {
 	flipYScale: false,
 	yPan: true,
 	yPanEnabled: false,
-	onContextMenu: noop
+	onContextMenu: noop,
+	type: "chart"
 };
 
 Chart.contextTypes = {
