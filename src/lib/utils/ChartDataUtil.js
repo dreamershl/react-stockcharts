@@ -58,7 +58,7 @@ function isArraySize2AndNumber(yExtentsProp) {
 
 export function getNewChartConfig(innerDimension, children, existingChartConfig = []) {
 	return React.Children.map(children, (each) => {
-		if (each.props.type === "chart") {
+		if (each.type.defaultProps === "chart" || each.props.type === "chart") {
 			const chartProps = {
 				...Chart.defaultProps,
 				...each.props
